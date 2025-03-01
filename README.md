@@ -1,6 +1,6 @@
 # 🚀 My Portfolio Website  
 
-This is simple Next.js portfolio website project bootstrapped with create-next-app.  
+Welcome to my personal portfolio website! Built with **Next.js**, this project showcases my skills, projects, and experience in web development.  
 
 ## Getting Started
 
