@@ -1,18 +1,18 @@
-import sgImgS1 from '/public/images/service-single/web/img-1.jpg'
-import sgImgS2 from '/public/images/service-single/web/img-2.jpg'
-import sgImgS3 from '/public/images/service-single/web/img-3.jpg'
+import sgImgS1 from '../public/images/service-single/web/img-1.jpg'
+import sgImgS2 from '../public/images/service-single/web/img-2.jpg'
+import sgImgS3 from '../public/images/service-single/web/img-3.jpg'
 
-import brImgS1 from '/public/images/service-single/app/img-1.jpg'
-import brImgS2 from '/public/images/service-single/app/img-2.jpg'
-import brImgS3 from '/public/images/service-single/app/img-3.jpg'
+import brImgS1 from '../public/images/service-single/app/img-1.jpg'
+import brImgS2 from '../public/images/service-single/app/img-2.jpg'
+import brImgS3 from '../public/images/service-single/app/img-3.jpg'
 
-import uxImgS1 from '/public/images/service-single/brand/img-1.jpg'
-import uxImgS2 from '/public/images/service-single/brand/img-2.jpg'
-import uxImgS3 from '/public/images/service-single/brand/img-3.jpg'
+import uxImgS1 from '../public/images/service-single/brand/img-1.jpg'
+import uxImgS2 from '../public/images/service-single/brand/img-2.jpg'
+import uxImgS3 from '../public/images/service-single/brand/img-3.jpg'
 
-import dvImgS1 from '/public/images/service-single/market/img-1.jpg'
-import dvImgS2 from '/public/images/service-single/market/img-2.jpg'
-import dvImgS3 from '/public/images/service-single/market/img-3.jpg'
+import dvImgS1 from '../public/images/service-single/market/img-1.jpg'
+import dvImgS2 from '../public/images/service-single/market/img-2.jpg'
+import dvImgS3 from '../public/images/service-single/market/img-3.jpg'
 
 
 

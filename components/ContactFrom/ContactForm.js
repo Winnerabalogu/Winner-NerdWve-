@@ -1,6 +1,10 @@
+"use client";
 import React, { useState } from 'react'
 import SimpleReactValidator from 'simple-react-validator';
 
+const validator = new SimpleReactValidator({
+    className: 'errorMessage'
+});
 
 const ContactForm = () => {
 
@@ -11,9 +15,7 @@ const ContactForm = () => {
         phone: '',
         message: ''
     });
-    const [validator] = useState(new SimpleReactValidator({
-        className: 'errorMessage'
-    }));
+
     const changeHandler = e => {
         setForms({ ...forms, [e.target.name]: e.target.value })
         if (validator.allValid()) {
