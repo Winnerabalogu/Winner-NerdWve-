@@ -1,3 +1,4 @@
+"use client"
 import React, { Fragment } from 'react';
 import About from '../components/about/about';
 import BackToTop from '../components/backToTop/backToTop';
@@ -14,33 +15,34 @@ import Footer from '../components/footer/Footer';
 import Pricing from '../components/Pricing';
 
 const HomePage = () => {
-    return (
-        <Fragment>
-            <Navbar />
-            <Element name='home'>
-                <Hero />
-            </Element>
-            <Element name='about'>
-                <About />
-            </Element>
-            <Element name='service'>
-                <ServiceSection />
-            </Element>
-            <Marquee />
-            <Element name='project'>
-                <ProjectSection />
-            </Element>
-            <Testimonial />
-            <Element name='blog'>
-                <BlogSection />
-            </Element>
-            <Pricing />
-            <Element name='contact'>
-                <ContactArea />
-            </Element>
-            <Footer />
-            <BackToTop />
-        </Fragment>
-    )
+  return (
+    <Fragment>
+      <Navbar />
+      <Element name='home'>
+        <Hero />
+      </Element>
+      <Element name='about'>
+        <About />
+      </Element>
+      <Element name='service'>
+        <ServiceSection />
+      </Element>
+      <Marquee />
+      <Element name='project'>
+        <ProjectSection />
+      </Element>
+      <Testimonial />
+      <Element name='blog'>
+        <BlogSection />
+      </Element>
+      <Pricing />
+      <Element name='contact'>
+        <ContactArea />
+      </Element>
+      <Footer />
+      <BackToTop />
+    </Fragment>
+  );
 };
+
 export default HomePage;

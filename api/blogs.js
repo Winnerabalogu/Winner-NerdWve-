@@ -1,17 +1,17 @@
 // images
-import blogImg1 from "/public/images/blog/img-1.jpg";
-import blogImg2 from "/public/images/blog/img-2.jpg";
-import blogImg3 from "/public/images/blog/img-3.jpg";
-import blogImg4 from "/public/images/blog/img-4.jpg";
-import blogImg5 from "/public/images/blog/img-5.jpg";
-import blogImg6 from "/public/images/blog/img-6.jpg";
+import blogImg1 from "../public/images/blog/img-1.jpg";
+import blogImg2 from "../public/images/blog/img-2.jpg";
+import blogImg3 from "../public/images/blog/img-3.jpg";
+import blogImg4 from "../public/images/blog/img-4.jpg";
+import blogImg5 from "../public/images/blog/img-5.jpg";
+import blogImg6 from "../public/images/blog/img-6.jpg";
 
-import blogSingleImg1 from "/public/images/blog-details/img-1.jpg";
-import blogSingleImg2 from "/public/images/blog-details/img-2.jpg";
-import blogSingleImg3 from "/public/images/blog-details/img-3.jpg";
-import blogSingleImg4 from "/public/images/blog-details/img-4.jpg";
-import blogSingleImg5 from "/public/images/blog-details/img-5.jpg";
-import blogSingleImg6 from "/public/images/blog-details/img-6.jpg";
+import blogSingleImg1 from "../public/images/blog-details/img-1.jpg";
+import blogSingleImg2 from "../public/images/blog-details/img-2.jpg";
+import blogSingleImg3 from "../public/images/blog-details/img-3.jpg";
+import blogSingleImg4 from "../public/images/blog-details/img-4.jpg";
+import blogSingleImg5 from "../public/images/blog-details/img-5.jpg";
+import blogSingleImg6 from "../public/images/blog-details/img-6.jpg";
 
 
 

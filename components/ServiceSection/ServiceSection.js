@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import Services from '../../api/service'
 import ServiceSingle from '../ServiceSingle';

@@ -3,10 +3,10 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import pimg1 from '../../../images/partners/1.png'
-import pimg2 from '../../../images/partners/2.png'
-import pimg3 from '../../../images/partners/3.png'
-import pimg4 from '../../../images/partners/4.png'
+import pimg1 from '../../images/partners/1.png'
+import pimg2 from '../../images/partners/2.png'
+import pimg3 from '../../images/partners/3.png'
+import pimg4 from '../../images/partners/4.png'
 import Image from 'next/image';
 
 const PartnerSlider = () => {

@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
 import NavLink from 'next/link'
-import himg from '/public/images/slider/right-img.png'
+import himg from '../../public/images/slider/right-img.png'
 import { Link } from 'react-scroll'
 import Image from "next/image";
 
