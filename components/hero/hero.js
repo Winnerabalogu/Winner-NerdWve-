@@ -16,7 +16,7 @@ const Hero =() => {
                                 <h2>App & Software Developer</h2>
                             </div>
                             <div className="tp-hero-sub">
-                                <p>Robert Miller</p>
+                                <p>Abalogu Winner</p>
                             </div>
                             <div className="btns">
                                 <Link activeClass="active" to="contact" spy={true} smooth={true} duration={500} offset={-95} className="theme-btn">Contact Me</Link>
