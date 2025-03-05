@@ -1,13 +1,16 @@
-
 import React, { useState, Fragment } from 'react';
 import { Dialog, Grid, } from '@mui/material'
 import Contact from './contact';
-import Services from '../../api/service'
 import Image from 'next/image';
+import Services from '../../data/service'
+import { Link } from 'react-scroll'
 
 
-const ServiceSingle = ({ maxWidth, open, onClose, title, dImg, sImg1, sImg2, }) => {
-
+const ServiceSingle = ({ maxWidth, open, onClose, title, dImg, sImg1, sImg2, description2, des2, approach, capability, process }) => { 
+  
+    const ClickHandler = () => {
+        window.scrollTo(10, 0);
+    }
     return (
         <Fragment>
             <Dialog
@@ -25,29 +28,23 @@ const ServiceSingle = ({ maxWidth, open, onClose, title, dImg, sImg1, sImg2, }) 
                                     <div className="tp-service-single-wrap">
                                         <div className="tp-service-single-item">
                                             <div className="tp-service-single-main-img">
-                                                <Image src={dImg} alt="" />
+                                                <Image src={dImg} alt="" width={400}/>
                                             </div>
                                             <div className="tp-service-single-title">
                                                 <h3>{title}</h3>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus dis posuere amet
-                                                tincidunt commodo, velit. Ipsum, hac nibh fermentum nisi, platea condimentum cursus
-                                                velit dui. Massa volutpat odio facilisis purus sit elementum. Non, sed velit dictum
-                                                quam. Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt. Id aliquet duis
-                                                sollicitudin diam, elit sit. Et nisi in libero facilisis sed est. Elit curabitur
-                                                amet risus bibendum. Posuere et eget orci, tempor enim.</p>
-                                            <p>Hac nibh fermentum nisi, platea condimentum cursus velit dui. Massa volutpat odio
-                                                facilisis purus sit elementum. Non, sed velit dictum quam. Id risus pharetra est, at
-                                                rhoncus, nec ullamcorper tincidunt. Id aliquet duis sollicitudin diam, elit sit.</p>
+                                            <p>In today's fast-paced digital world, building high-performing applications requires a strong foundation in development, design, and management. My expertise spans across these key areas, ensuring end-to-end delivery of top-notch software solutions:</p>
+                                            <p>{description2}</p>
+                                            <p>{des2}</p>
                                             <div className="row mt-4">
                                                 <div className="col-md-6 col-sm-6 col-12">
                                                     <div className="tp-p-details-img">
-                                                        <Image src={sImg1} alt="" />
+                                                        <Image src={sImg1} alt="" width={300}/>
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6 col-sm-6 col-12">
                                                     <div className="tp-p-details-img">
-                                                        <Image src={sImg2} alt="" />
+                                                        <Image src={sImg2} alt="" width={200}/>
                                                     </div>
                                                 </div>
                                             </div>
@@ -56,58 +53,61 @@ const ServiceSingle = ({ maxWidth, open, onClose, title, dImg, sImg1, sImg2, }) 
                                             <div className="tp-service-single-title">
                                                 <h3>Our Capabilities</h3>
                                             </div>
-                                            <p>Massa volutpat odio facilisis purus sit elementum. Non, sed velit dictum quam. Id
-                                                risus pharetra est, at rhoncus, nec ullamcorper tincidunt. Id aliquet duis
-                                                sollicitudin diam.</p>
+                                            <p>We leverage cutting-edge technologies and proven methodologies to design, develop, and manage digital solutions that drive impact. From scalable web apps to high-performance mobile applications, we ensure every project is executed with precision and efficiency.</p>
                                             <ul>
-                                                <li>Non saed velit dictum quam risus pharetra esta.</li>
-                                                <li>Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt.</li>
-                                                <li>Hac nibh fermentum nisi, platea condimentum cursus.</li>
-                                                <li>Massa volutpat odio facilisis purus sit elementum.</li>
-                                                <li>Elit curabitur amet risus bibendum.</li>
+                                                {capability && Array.isArray(capability) ? (
+                                                    capability.slice(0, 3).map((cap, index) => (
+                                                        <li key={index}>{cap}</li>
+                                                    ))
+                                                ) : (
+                                                    <li>No capabilities available.</li>
+                                                )}
                                             </ul>
                                         </div>
                                         <div className="tp-service-single-item">
                                             <div className="tp-service-single-title">
                                                 <h3>Our approach</h3>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat suspendisse aenean
-                                                tellus augue morbi risus. Sit morbi vitae morbi sed urna sed purus. Orci facilisi
-                                                eros sed pellentesque. Risus id sed tortor sed scelerisque. Vestibulum elit
-                                                elementum, magna id viverra non, velit. Pretium, eros, porttitor fusce auctor vitae
-                                                id. Phasellus scelerisque nibh eleifend vel enim mauris purus. Rutrum vel sem
-                                                adipiscing nisi vulputate molestie scelerisque molestie ultrices. Eu, fusce
-                                                vulputate diam interdum morbi ac a.</p>
+                                            <p>{approach}</p>
                                         </div>
                                         <div className="tp-service-single-item list-widget">
                                             <div className="tp-service-single-title">
                                                 <h3>Our Work Process</h3>
                                             </div>
                                             <ul>
-                                                <li>Non saed velit dictum quam risus pharetra esta.</li>
-                                                <li>Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt.</li>
-                                                <li>Hac nibh fermentum nisi, platea condimentum cursus.</li>
-                                                <li>Massa volutpat odio facilisis purus sit elementum.</li>
+                                                {process && Array.isArray(process) ? (
+                                                    process.slice(0, 5).map((proc, index) => (
+                                                        <li key={index}>{proc}</li>
+                                                    ))
+                                                ) : (
+                                                    <li>No process available.</li>
+                                                )}
                                             </ul>
                                         </div>
                                         <div className="tp-service-single-item">
+                                        <div className="tp-service-area">
                                             <div className="tp-service-single-title">
                                                 <h3>Related Service</h3>
                                             </div>
-                                            <div className="tp-service-area">
-                                                <div className="row align-items-center">
-                                                    {Services.slice(0, 3).map((service, srv) => (
-                                                        <div className="col-lg-4 col-md-6 col-12" key={srv}>
-                                                            <div className="tp-service-item">
-                                                                <i className={`fi ${service.icon}`} ></i>
-                                                                <h2>{service.sTitle}</h2>
-                                                                <p>Lacus, etiam sed est eu tempus need Temer diam congue.</p>
-                                                            </div>
+                                            <div className="tp-service-wrap">
+                                            <div className="row align-items-center">                                          
+                                                {Services.slice(0, 4).map((service, srv) => (
+                                                    <div className="col col-lg-4 col-md-6 col-12" key={srv}>
+                                                        <div className="tp-service-item">
+                                                            <i className={`fi ${service.icon}`} ></i>
+                                                            
+                                                           <Link onClick={onClose} activeClass="active" to="service" spy={true} smooth={true} duration={500} offset={-90}>
+                                                           <h2>{service.sTitle}</h2>
+                                                           </Link>
+                                                            
+                                                            <p>{service.description2}</p>
                                                         </div>
-                                                    ))}
-                                                </div>
+                                                    </div>
+                                                ))}
                                             </div>
-                                        </div>
+                                            </div>
+                                        </div> 
+                                        </div>                                       
                                         <div className="tp-service-single-item">
                                             <div className="tp-service-contact-area">
                                                 <div className="tp-contact-title">
@@ -130,4 +130,3 @@ const ServiceSingle = ({ maxWidth, open, onClose, title, dImg, sImg1, sImg2, }) 
     );
 }
 export default ServiceSingle
-

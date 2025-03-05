@@ -23,8 +23,8 @@ const Projects = [
        ps1img:ps1img1,
        psub1img1:psub1img1,
        psub1img2:psub1img2,
-       title:'Business Website Design',  
-       subTitle:'Web Design',   
+       title:'Benny Hotel WebApp',  
+       subTitle:'Web Development',   
     },
     {
        Id:'2',
@@ -32,7 +32,7 @@ const Projects = [
        ps1img:ps1img2,
        psub1img1:psub1img1,
        psub1img2:psub1img2,
-       title:'Food Website Design', 
+       title:'Artisan CraftWorld Website', 
        subTitle:'Web Development',    
     },
     {
@@ -41,8 +41,8 @@ const Projects = [
       ps1img:ps1img3,
       psub1img1:psub1img1,
       psub1img2:psub1img2,
-      title:'Creative Website Design',  
-      subTitle:'Web Design',   
+      title:'UI/UX DESIGN Artisan Mobile App',  
+      subTitle:'UI/UX Design',   
    },
    {
       Id:'4',
@@ -50,7 +50,7 @@ const Projects = [
       ps1img:ps1img4,
       psub1img1:psub1img1,
       psub1img2:psub1img2,
-      title:'Marketing Website Design', 
+      title:'Artisan Mobile App Design', 
       subTitle:'App Design',    
    },
    {
@@ -59,8 +59,8 @@ const Projects = [
       ps1img:ps1img5,
       psub1img1:psub1img1,
       psub1img2:psub1img2,
-      title:'Charity Website Design', 
-      subTitle:'Web Design',    
+      title:'Graphic Designs', 
+      subTitle:'Graphic Designs',    
    },
    {
       Id:'5',
@@ -68,8 +68,8 @@ const Projects = [
       ps1img:ps1img6,
       psub1img1:psub1img1,
       psub1img2:psub1img2,
-      title:'Ecommarce Website Design', 
-      subTitle:'Web App',    
+      title:'Management Of Benny WebApp Development', 
+      subTitle:'Project Management',    
    },
    
     

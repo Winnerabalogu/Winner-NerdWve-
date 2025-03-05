@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import { Link } from 'react-scroll'
 import MobileMenu from '../MobileMenu/MobileMenu'
-import Logo from '../../public/images/logo.png'
+import Logo from '../../public/images/port-logo.png'
 import NavLink from 'next/link'
 
 const Header = (props) => {
@@ -30,7 +30,7 @@ const Header = (props) => {
                             </div>
                             <div className="col-lg-3 col-md-6 col-6">
                                 <div className="navbar-header">
-                                    <NavLink onClick={ClickHandler} className="navbar-brand" href="/"><Image src={Logo} alt="" /></NavLink>
+                                    <NavLink onClick={ClickHandler} className="navbar-brand"  href="/"><Image src={Logo} alt="" style={{ width: "400px", height: "auto" }}/></NavLink>
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-1 col-1">

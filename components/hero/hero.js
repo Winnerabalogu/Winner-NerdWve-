@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import NavLink from 'next/link'
-import himg from '../../public/images/slider/right-img.png'
+import himg from '../../public/images/slider/port-img2.jpg'
 import { Link } from 'react-scroll'
 import Image from "next/image";
 
@@ -32,9 +32,10 @@ const Hero =() => {
             </div>
             <div className="social-link">
                 <ul>
-                    <li><NavLink href="/">Facebook</NavLink></li>
-                    <li><NavLink href="/">Twitter</NavLink></li>
-                    <li><NavLink href="/">Instagram</NavLink></li>
+                    <li><NavLink href="https://web.facebook.com/xstonnershub">Facebook</NavLink></li>
+                    <li><NavLink href="https://x.com/WealthPrim82754">Twitter</NavLink></li>
+                    <li><NavLink href="https://www.instagram.com/nerdwave.io/">Instagram</NavLink></li>
+                    <li><NavLink href="https://www.linkedin.com/in/abalogu-winner/">Linkedln</NavLink></li>
                 </ul>
             </div>
             <div className="visible-text">

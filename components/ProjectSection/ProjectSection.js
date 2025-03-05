@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image';
 import React, { useState } from 'react';
-import Projects from '../../api/project'
+import Projects from '../../data/project'
 import ProjectSingle from '../ProjectSingle/ProjectSingle';
 
 

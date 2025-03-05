@@ -12,7 +12,7 @@ import Testimonial from '../components/Testimonial/Testimonial';
 import { Element } from 'react-scroll'
 import BlogSection from '../components/BlogSection/BlogSection';
 import Footer from '../components/footer/Footer';
-import Pricing from '../components/Pricing';
+
 
 const HomePage = () => {
   return (
@@ -35,7 +35,7 @@ const HomePage = () => {
       <Element name='blog'>
         <BlogSection />
       </Element>
-      <Pricing />
+      
       <Element name='contact'>
         <ContactArea />
       </Element>

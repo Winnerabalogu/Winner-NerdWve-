@@ -1834,7 +1834,7 @@ img {
 }
 
 .tp-site-header .navbar-header .navbar-brand img {
-  max-width: 170px;
+  max-width: 300px;
 }
 
 @media (max-width: 991px) {
@@ -1864,13 +1864,13 @@ img {
 
 @media (max-width: 440px) {
   .tp-site-header .navbar-header .navbar-brand img {
-    max-width: 170px;
+    max-width: 300px;
   }
 }
 
 @media (max-width: 370px) {
   .tp-site-header .navbar-header .navbar-brand img {
-    max-width: 140px;
+    max-width: 280px;
   }
 }
 

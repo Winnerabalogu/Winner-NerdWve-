@@ -180,8 +180,9 @@
             }
 
             .tf-funfact {
-                display: flex;
-                justify-content: space-between;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); /* Two columns */
+                gap: 20px; /* Adjust spacing between items */
                 max-width: 450px;
                 margin-top: 30px;
 
@@ -189,7 +190,8 @@
                     h3 {
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 56px;
+                        padding-right: 10px;
+                        font-size: 36px;
                         line-height: 50px;
                         color: $theme-primary-color;
 

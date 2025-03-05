@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import Services from '../../api/service'
+import Services from '../../data/service'
 import ServiceSingle from '../ServiceSingle';
 
 const ServiceSection = (props) => {
@@ -35,8 +35,7 @@ const ServiceSection = (props) => {
                                 <div className="tp-service-item">
                                     <i className={`fi ${service.icon}`}></i>
                                     <h2 onClick={() => handleClickOpen(service)}>{service.sTitle}</h2>
-                                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet
-                                        mornings.</p>
+                                    <p> {service.description2}</p>
                                     <button className="read-more" onClick={() => handleClickOpen(service)}>
                                         <i className="fi flaticon-right-arrow"></i>
                                     </button>
@@ -49,7 +48,7 @@ const ServiceSection = (props) => {
             <div className="visible-rotate-text">
                 <h1>Services</h1>
             </div>
-            <ServiceSingle open={open} onClose={handleClose} title={state.sTitle} dImg={state.sImgS} sImg1={state.ssImg1} sImg2={state.ssImg2} />
+            <ServiceSingle open={open} onClose={handleClose} title={state.sTitle} dImg={state.sImgS} sImg1={state.ssImg1} sImg2={state.ssImg2} description2 = {state.description2} des2={state.des2} approach ={state.approach} capability={state.capability} process ={state.process}/>
         </div>
     );
 }
