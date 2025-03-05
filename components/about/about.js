@@ -24,8 +24,8 @@ const About = (props) => {
                             <div className="tf-about-text">
                                 <small>about Me</small>
                                 <h2>Welcome to my portfolio! I’m Abalogu Winner.</h2>
-                                <h5>I have 3+ years of experiences in Software Development for give you better services.</h5>
-                                <p>I am an enthusiastic software programmer with a passion for coding. Throughout my academic journey, I have developed my skills in programming languages such as ; HTML, Python, CSS and have gained hands on experience through various projects and internships. I have developed a responsive e-commerce website using React and integrated it with a Node.js backend for product management.I also created a personal portfolio website with Next.js and SASS for styling to showcase my development skills.
+                                <h5>I have 3+ years of experiences in Software Development and Problem Solving</h5>
+                                <p>I am an enthusiastic software programmer with a passion for coding. Throughout my academic journey, I have developed my skills in programming languages such as Javasript, Python, Java and have gained hands on experience through various projects and internships. I have developed a responsive hotel booking webapp using Nextjs and integrated it with a Node.js backend for hotel management.I also created my personal portfolio website with Next.js and SASS for styling to showcase my development skills.
                                 These experiences have equipped me with a solid foundation in software development and a strong problem solving mindset and I am very particular about details.  </p>
 
                                 <div className="tf-funfact">

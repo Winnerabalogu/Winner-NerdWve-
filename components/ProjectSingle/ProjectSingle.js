@@ -1,12 +1,12 @@
-
 import React, { Fragment } from 'react';
 import { Dialog, Grid, } from '@mui/material'
 import Contact from './contact';
 import RelatedProject from './related';
 import Image from 'next/image';
+import Projects from '../../data/project'
 
 
-const ProjectSingle = ({ maxWidth, open, onClose, title, pImg, psub1img1, psub1img2, }) => {
+const ProjectSingle = ({ maxWidth, open, onClose, title, pImg, psub1img1, psub1img2,description, features, stra, straList, approach, goals }) => {
 
 
     return (
@@ -31,16 +31,7 @@ const ProjectSingle = ({ maxWidth, open, onClose, title, pImg, psub1img1, psub1i
                                                     <div className="tp-project-single-title">
                                                         <h3>{title} Project</h3>
                                                     </div>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus dis posuere
-                                                        amet
-                                                        tincidunt commodo, velit. Ipsum, hac nibh fermentum nisi, platea condimentum
-                                                        cursus
-                                                        velit dui. Massa volutpat odio facilisis purus sit elementum. Non.</p>
-                                                    <p>Hac nibh fermentum nisi, platea condimentum cursus velit dui. Massa volutpat
-                                                        odio
-                                                        facilisis purus sit elementum. Non, sed velit dictum quam. Id risus pharetra
-                                                        est, at
-                                                        rhoncus, nec ullamcorper tincidunt. Id aliquet duis sollicitudin diam</p>
+                                                    <p>{description}</p>
                                                 </div>
                                                 <div className="col-lg-5">
                                                     <div className="tp-project-single-content-des-right">
@@ -56,6 +47,7 @@ const ProjectSingle = ({ maxWidth, open, onClose, title, pImg, psub1img1, psub1i
                                                     </div>
                                                 </div>
                                             </div>
+                                                
                                             <div className="tp-project-single-main-img">
                                                 <Image src={pImg} alt="" />
                                             </div>
@@ -66,16 +58,15 @@ const ProjectSingle = ({ maxWidth, open, onClose, title, pImg, psub1img1, psub1i
                                                     <div className="tp-project-single-title">
                                                         <h3>Our Strategies</h3>
                                                     </div>
-                                                    <p>Massa volutpat odio facilisis purus sit elementum. Non, sed velit dictum
-                                                        quam. Id
-                                                        risus pharetra est, at rhoncus, nec ullamcorper tincidunt. Id aliquet duis
-                                                        sollicitudin diam.</p>
+                                                    <p>{stra}</p>
                                                     <ul>
-                                                        <li>Non saed velit dictum quam risus pharetra esta.</li>
-                                                        <li>Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt.</li>
-                                                        <li>Hac nibh fermentum nisi, platea condimentum cursus.</li>
-                                                        <li>Massa volutpat odio facilisis purus sit elementum.</li>
-                                                        <li>Elit curabitur amet risus bibendum.</li>
+                                                    {straList && Array.isArray(straList) ? (
+                                                    straList.slice(0, 5).map((list, index) => (
+                                                        <li key={index}>{list}</li>
+                                                    ))
+                                                ) : (
+                                                    <li>No Strategies available.</li>
+                                                )}
                                                     </ul>
                                                 </div>
                                                 <div className="col-lg-6">
@@ -92,13 +83,7 @@ const ProjectSingle = ({ maxWidth, open, onClose, title, pImg, psub1img1, psub1i
                                             <div className="tp-project-single-title">
                                                 <h3>Our approach</h3>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat suspendisse aenean
-                                                tellus augue morbi risus. Sit morbi vitae morbi sed urna sed purus. Orci facilisi
-                                                eros sed pellentesque. Risus id sed tortor sed scelerisque. Vestibulum elit
-                                                elementum, magna id viverra non, velit. Pretium, eros, porttitor fusce auctor vitae
-                                                id. Phasellus scelerisque nibh eleifend vel enim mauris purus. Rutrum vel sem
-                                                adipiscing nisi vulputate molestie scelerisque molestie ultrices. Eu, fusce
-                                                vulputate diam interdum morbi ac a.</p>
+                                            <p>{approach}</p>
                                         </div>
                                         <div className="tp-project-single-gallery">
                                             <div className="row mt-4">
@@ -121,10 +106,13 @@ const ProjectSingle = ({ maxWidth, open, onClose, title, pImg, psub1img1, psub1i
                                                         <h3>Resieved goals</h3>
                                                     </div>
                                                     <ul>
-                                                        <li>Non saed velit dictum quam risus pharetra esta.</li>
-                                                        <li>Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt.</li>
-                                                        <li>Hac nibh fermentum nisi, platea condimentum cursus.</li>
-                                                        <li>Massa volutpat odio facilisis purus sit elementum.</li>
+                                                    {goals && Array.isArray(goals) ? (
+                                                    goals.slice(0, 3).map((goal, index) => (
+                                                        <li key={index}>{goal}</li>
+                                                    ))
+                                                ) : (
+                                                    <li>No Goal available.</li>
+                                                )}
                                                     </ul>
                                                 </div>
                                                 <div className="col-lg-6 list-widget-s">
@@ -132,10 +120,13 @@ const ProjectSingle = ({ maxWidth, open, onClose, title, pImg, psub1img1, psub1i
                                                         <h3>Results</h3>
                                                     </div>
                                                     <ul>
-                                                        <li>Mauris dignissim blandit cursus imperdiet accumsan lorem.</li>
-                                                        <li>Nam id in non sed cras purus nunc et.</li>
-                                                        <li>Mauris orci, cursus nisl odio est adipiscing gravida magna eget.</li>
-                                                        <li>Quis mauris vel felis convallis nulla dignissim.</li>
+                                                    {features && Array.isArray(features) ? (
+                                                    features.slice(0, 3).map((feature, index) => (
+                                                        <li key={index}>{feature}</li>
+                                                    ))
+                                                ) : (
+                                                    <li>No features available.</li>
+                                                )}
                                                     </ul>
                                                 </div>
                                             </div>

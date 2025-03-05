@@ -43,7 +43,7 @@ const Header = (props) => {
                                         </li>
                                         <li><Link activeClass="active" to="service" spy={true} smooth={true} duration={500} offset={-95}>Service</Link></li>
                                         <li>
-                                            <Link activeClass="active" to="project" spy={true} smooth={true} duration={500} offset={-95}>Portfolio</Link>
+                                            <Link activeClass="active" to="project" spy={true} smooth={true} duration={500} offset={-95}>Projects</Link>
                                         </li>
                                         <li>
                                             <Link activeClass="active" to="blog" spy={true} smooth={true} duration={500} offset={-95}>Blog</Link>
