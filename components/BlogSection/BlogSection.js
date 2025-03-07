@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import blogs from '../../api/blogs'
+import blogs from '../../data/blogs'
 import BlogSingle from "../BlogSingle";
 import Link from 'next/link'
 import Image from 'next/image';

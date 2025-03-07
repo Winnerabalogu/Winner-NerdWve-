@@ -14,7 +14,7 @@ const About = (props) => {
                                 <Image src={aImg} alt="" />
                                 <div className="tf-about-img-text">
                                     <div className="tf-about-icon">
-                                        <h3>8+</h3>
+                                        <h3>3+</h3>
                                         <span>Years Exprience</span>
                                     </div>
                                 </div>
@@ -23,25 +23,27 @@ const About = (props) => {
                         <div className="col-lg-6 col-md-12 col-12">
                             <div className="tf-about-text">
                                 <small>about Me</small>
-                                <h2>Welcome to Tonu, Best Software Services</h2>
-                                <h5>I have 8+ years of experiences in Software Development for give you better services.</h5>
-                                <p>A wonderful serenity has taken possession of my entire soul, like these sweet
-                                    mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm
-                                    of existence in this spot, which was created for the bliss of souls like mine. I am
-                                    so happy, my dear friend, so absorbed in the exquisite </p>
+                                <h2>Welcome to my portfolio! I’m Abalogu Winner.</h2>
+                                <h5>I have 3+ years of experiences in Software Development and Problem Solving</h5>
+                                <p>I am an enthusiastic software programmer with a passion for coding. Throughout my academic journey, I have developed my skills in programming languages such as Javasript, Python, Java and have gained hands on experience through various projects and internships. I have developed a responsive hotel booking webapp using Nextjs and integrated it with a Node.js backend for hotel management.I also created my personal portfolio website with Next.js and SASS for styling to showcase my development skills.
+                                These experiences have equipped me with a solid foundation in software development and a strong problem solving mindset and I am very particular about details.  </p>
 
                                 <div className="tf-funfact">
                                     <div className="tf-funfact-item">
-                                        <h3><span>500</span>+</h3>
-                                        <p>Projects Completed</p>
+                                        <h3>Web Development</h3>
+                                        <p>Stack : Js(Next.js)</p>
                                     </div>
                                     <div className="tf-funfact-item">
-                                        <h3><span>52</span>+</h3>
-                                        <p>Awards Win</p>
+                                        <h3>Mobile App </h3>
+                                        <p>Stack: Flutter, React Native</p>
                                     </div>
                                     <div className="tf-funfact-item">
-                                        <h3><span>2</span>M+</h3>
-                                        <p>Happy clients</p>
+                                        <h3>UI/UX DESIGN</h3>
+                                        <p>Stack : Figma</p>
+                                    </div>
+                                    <div className="tf-funfact-item">
+                                        <h3>Project Management</h3>
+                                        <p>Stack: Jira, Trello, Asana, Notion</p>
                                     </div>
                                 </div>
                             </div>

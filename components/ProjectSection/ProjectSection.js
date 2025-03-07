@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image';
 import React, { useState } from 'react';
-import Projects from '../../api/project'
+import Projects from '../../data/project'
 import ProjectSingle from '../ProjectSingle/ProjectSingle';
 
 
@@ -54,7 +54,7 @@ const ProjectSection = (props) => {
                     </div>
                 </div>
             </div>
-            <ProjectSingle open={open} onClose={handleClose} title={state.title} pImg={state.ps1img} psub1img1={state.psub1img1} psub1img2={state.psub1img2} />
+            <ProjectSingle open={open} onClose={handleClose} title={state.title} pImg={state.ps1img} psub1img1={state.psub1img1} psub1img2={state.psub1img2} description={state.description} features={state.features} stra={state.stra} straList={state.straList} approach={state.approach} goals={state.goals}/>
 
             <div className="visible-rotate-text">
                 <h1>My Projects</h1>

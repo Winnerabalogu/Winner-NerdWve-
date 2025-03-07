@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Logo from '../../public/images/logo.png'
+import Logo from '../../public/images/foot-logo.png'
 import Image from 'next/image'
 
 const Footer = (props) => {
@@ -16,11 +16,11 @@ const Footer = (props) => {
                     <div className="col-12">
                         <div className="link-widget">
                             <ul>
-                                <li><Link href="/"><i className="ti-facebook"></i></Link></li>
-                                <li><Link href="/"><i className="ti-twitter-alt"></i></Link></li>
-                                <li><Link href="/"><i className="ti-linkedin"></i></Link></li>
-                                <li><Link href="/"><i className="ti-pinterest"></i></Link></li>
-                                <li><Link href="/"><i className="ti-vimeo-alt"></i></Link></li>
+                                <li><Link href="https://web.facebook.com/xstonnershub"><i className="ti-facebook"></i></Link></li>
+                                <li><Link href="https://x.com/WealthPrim82754"><i className="ti-twitter-alt"></i></Link></li>
+                                <li><Link href="https://www.linkedin.com/in/abalogu-winner/"><i className="ti-linkedin"></i></Link></li>
+                                <li><Link href="https://www.instagram.com/nerdwave.io/"><i className="ti-instagram"></i></Link></li>
+                                
                             </ul>
                         </div>
                     </div>
